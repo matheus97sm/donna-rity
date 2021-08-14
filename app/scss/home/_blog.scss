@@ -1,0 +1,46 @@
+.home-blog {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $lightGrey;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+}
+
+.home-blog-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.home-blog-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #fff;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  div {
+    padding: 0 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    h3 {
+      color: $grey;
+      font-size: 24px;
+      font-weight: bolder;
+    }
+  }
+}

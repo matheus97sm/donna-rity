@@ -1,0 +1,32 @@
+.free-estimate {
+  position: relative;
+  width: 100%;
+  padding: 64px 0;
+  background-color: $green;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.free-estimate-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  .title {
+    color: #fff;
+
+    &::before {
+      background-color: #fff;
+    }
+  }
+}
+
+.free-estimate-logo {
+  position: absolute;
+  left: -20%;
+  bottom: -20%;
+  height: 140%;
+  opacity: 0.21;
+  z-index: -1;
+}

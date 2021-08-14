@@ -10,14 +10,26 @@
  */
 ?>
 
+<?php 
+wp_reset_query();
+
+if (!is_front_page()) { 
+  include 'free-estimate.php';  
+} ?>
+
 <footer class="footer">
-  <? // echo do_shortcode(''); ?>
+  <div class="container">
+    <p>Copyright © <a href="<?=site_url()?>">www.ritycleaning.com</a> 2021. All rights reserved.</p>
+  </div>
 </footer>
+
+<div style="display: none;">
+  <?php include 'svg.php'; ?>
+</div>
 
 <script src="<?=get_template_directory_URI()?>/app/app.js"></script>
 
 <?php wp_footer(); ?>
 
 </body>
-
 </html>

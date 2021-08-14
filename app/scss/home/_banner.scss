@@ -1,0 +1,39 @@
+.banner {
+  width: 100%;
+  padding-top: 120px;
+  background-color: $lightGrey;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 1;
+
+    .banner-text {
+      width: 100%;
+  
+      h1 {
+        max-width: 220px;
+      }
+  
+      p {
+        max-width: 280px;
+        margin: 4px 0 16px;
+      }
+    }
+  
+    .banner-img {
+      width: 100%;
+    }
+  }
+
+  .banner-logo {
+    position: absolute;
+    top: 140px;
+    left: -15vw;
+    width: 100vw;
+    z-index: -1;
+  }
+}

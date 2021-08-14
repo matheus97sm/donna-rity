@@ -1,9 +1,21 @@
+$yellow: #FCD126;
+$green: #2fd1bd;
+$text: #9b9b9b;
+$grey: #656565;
+$lightGrey: #f6f6f6;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  transition: .5s transform;
+  font-size: 16px;
 }
 
 ul,
@@ -16,6 +28,98 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: $text;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  color: $grey;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.title {
+  padding-bottom: 12px;
+  position: relative;
+  color: $text;
+  font-size: 36px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 64px;
+    height: 3px;
+    display: block;
+    transform: translate3d(-50%, 0, 0);
+    background-color: $yellow;
+  }
+}
+
+.cta {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  transition: .5s color ease, .5s background-color ease;
+  color: $yellow;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: .05rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+
+  &.cta-yellow {
+    background-color: $yellow;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $yellow;
+    }
+  }
+
+  &.cta-green {
+    background-color: $green;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $green;
+    }
+  }
+
+  &.cta-white-green {
+    background-color: #fff;
+    color: $green;
+    
+    &:hover {
+      background-color: $green;
+      color: #fff;
+    }
+  }
+}
+
 @import './scss/header/header';
+@import './scss/home';
+@import './scss/services';
+@import './scss/free-estimate';
 @import './scss/footer/footer';
 @import './animation';

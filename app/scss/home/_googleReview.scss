@@ -1,0 +1,45 @@
+.google {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $lightGrey;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.google-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 240px;
+  }
+}
+
+.google-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .title {
+    text-align: right;
+    width: 220px;
+    align-self: flex-end;
+
+    &::before {
+      left: unset;
+      transform: unset;
+      right: 0;
+    }
+  }
+
+  p {
+    margin: 32px 0;
+  }
+}

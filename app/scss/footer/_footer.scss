@@ -1,0 +1,16 @@
+.footer {
+  background-color: $text;
+  padding: 16px 0;
+
+  .container {
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

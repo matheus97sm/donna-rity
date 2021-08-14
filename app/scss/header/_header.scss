@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  padding: 16px 0;
+  width: 100%;
+  z-index: 99;
+  background-color: $lightGrey;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-logo {
+  width: 140px;
+  display: block;
+
+  img {
+    width: 100%;
+  }
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@import './menu';

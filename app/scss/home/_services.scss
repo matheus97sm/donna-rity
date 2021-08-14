@@ -1,0 +1,14 @@
+.services.home-services {
+  background-color: $lightGrey;
+}
+
+.home-services-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  p {
+    text-align: center;
+  }
+}
