@@ -37,3 +37,28 @@
     z-index: -1;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .banner {
+    padding-top: 164px;
+  
+    .container {
+      gap: 64px;
+  
+      .banner-text {
+        width: 100%;
+    
+        h1 {
+          max-width: 300px;
+        }
+    
+        p {
+          max-width: 460px;
+          margin: 8px 0 32px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

@@ -32,3 +32,10 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .home-blog-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+}

@@ -1,5 +1,10 @@
 .about {
+  position: relative;
   padding: 64px 0;
+
+  &.about-history {
+    z-index: 2;
+  }
 
   &.about-mission {
     background-color: $lightGrey;
@@ -9,15 +14,41 @@
     display: grid;
     gap: 32px;
   }
+
+  .about-logo {
+    position: absolute;
+    bottom: -64px;
+    left: -64px;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 .about-history-img,
 .about-mission-img {
+  position: relative;
   width: 100%;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: -16px;
+    width: 100%;
+    height: 100%;
+    background-color: $lightGrey;
+    z-index: -1;
+  }
 
   img {
     width: 100%;
   }
+}
+
+.about-mission-img::before {
+  left: 16px;
+  background-color: #EEEEEE;
 }
 
 .about-history-text,
@@ -47,4 +78,38 @@
 
 .about-mission-text {
   grid-row: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 128px 0;
+  
+    .container {
+      gap: 64px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about-logo {
+      position: absolute;
+      bottom: -16px;
+      left: -32px;
+      width: 360px;
+      z-index: -1;
+    }
+  }
+
+  .about-history-text {  
+    &::before {
+      top: 156px;
+    }
+  }
+    
+  .about-mission-text {
+    grid-row: unset;
+  }
+
+  .about-history-img,
+  .about-mission-img {
+    align-self: flex-end;
+  }
 }

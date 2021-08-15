@@ -30,6 +30,12 @@ $image = get_sub_field('image');
       </div>
     </div>
   </div>
+
+  <img 
+    src="<?=get_template_directory_URI()?>/img/src/logo-green.svg" 
+    alt="Donna Rity Cleaning"
+    class="about-logo"
+  />
 </section>
 
 <?php endwhile; ?>

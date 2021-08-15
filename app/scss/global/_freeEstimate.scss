@@ -30,3 +30,11 @@
   opacity: 0.21;
   z-index: -1;
 }
+
+@media screen and (min-width: 768px) {
+  .free-estimate-logo {
+    left: -10%;
+    top: -10%;
+    height: 480px;
+  }
+}
