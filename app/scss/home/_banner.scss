@@ -1,7 +1,9 @@
 .banner {
+  position: relative;
   width: 100%;
   padding-top: 120px;
   background-color: $lightGrey;
+  z-index: 1;
 
   .container {
     position: relative;
@@ -31,7 +33,7 @@
 
   .banner-logo {
     position: absolute;
-    top: 140px;
+    top: 260px;
     left: -15vw;
     width: 100vw;
     z-index: -1;
@@ -59,6 +61,38 @@
           line-height: 30px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .banner {
+    height: 100vh;
+    padding: 0;
+  
+    .container {
+      height: 100%;
+      padding-left: 64px;
+      max-width: 1250px;
+      display: grid;
+      grid-template-columns: 1fr 1.7fr;
+      gap: 0;
+      align-items: center;
+  
+      .banner-img {
+        width: 100%;
+        align-self: flex-end;
+      }
+    }
+
+    .banner-logo {
+      position: absolute;
+      top: unset;
+      bottom: -128px;
+      left: -5vw;
+      width: unset;
+      height: 70vh;
+      z-index: -1;
     }
   }
 }

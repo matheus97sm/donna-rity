@@ -73,3 +73,20 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .inside-content {
+    padding: 128px 0 128px 256px;
+
+    .container {
+      max-width: 780px;
+
+      &::before {
+        top: 96px;
+        height: 520px;
+        max-height: 80%;
+        background-color: $green;
+      }
+    }
+  }
+}

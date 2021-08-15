@@ -31,13 +31,13 @@ $button_link = get_sub_field('button_link')['url'];
       src="<?=get_template_directory_URI()?>/img/src/banner.png" 
       alt="Donna Rity Cleaning"
     />
- 
-    <img 
-      class="banner-logo" 
-      src="<?=get_template_directory_URI()?>/img/src/logo-green.svg" 
-      alt="Donna Rity Cleaning" 
-    />
   </div>
+ 
+  <img 
+    class="banner-logo" 
+    src="<?=get_template_directory_URI()?>/img/src/logo-green.svg" 
+    alt="Donna Rity Cleaning" 
+  />
 </section>
 
 <?php endwhile; ?>

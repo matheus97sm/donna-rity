@@ -121,6 +121,16 @@ h2 {
       color: #fff;
     }
   }
+
+  &.cta-white-yellow {
+    background-color: #fff;
+    color: $yellow;
+    
+    &:hover {
+      background-color: $yellow;
+      color: #fff;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -132,6 +142,24 @@ h2 {
     color: $green;
     font-size: 36px;
     font-weight: bolder;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+
+  .title {
+    font-size: 46px;
+  }
+
+  .cta {
+    padding: 16px 48px;
   }
 }
 

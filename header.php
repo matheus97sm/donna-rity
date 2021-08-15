@@ -40,7 +40,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header class="header">
+  <header class="header" data-animar>
     <div class="container">
       <a href="<?=site_url()?>" class="header-logo">
         <img src="<?=get_template_directory_URI()?>/img/src/logo.svg" alt="Donna Rity Cleaning" />

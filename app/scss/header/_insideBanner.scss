@@ -21,3 +21,14 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .inside-banner {
+    padding: 156px 0 96px;
+  
+    .container h1.title {
+      color: $grey;
+      font-size: 64px;
+    }
+  }
+}

@@ -9,5 +9,17 @@
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .contact {
+    padding: 128px 0;
+    overflow: hidden;
+
+    .container {
+      grid-template-columns: 1fr 1fr;
+      gap: 128px;
+    }
+  }
+}
+
 @import './dropMessage';
 @import './info';

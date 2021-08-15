@@ -25,3 +25,24 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .contact-info {
+    position: relative;
+    padding: 64px 0;
+    padding-left: 96px;
+    align-self: flex-start;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100%;
+      background-color: $lightGrey;
+      z-index: -1;
+    }
+  }
+}

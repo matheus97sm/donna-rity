@@ -5,8 +5,17 @@
   width: 100%;
   z-index: 99;
   background-color: $lightGrey;
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  
+  &.anime {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: 1.5s opacity ease-in-out, 1.5s transform ease-in-out;
+  }
 
   .container {
+    max-width: 1250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1050px) {
   .header-logo {
     width: 200px;
   }

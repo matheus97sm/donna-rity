@@ -7,5 +7,6 @@ import setColors from './js/setColors';
 import './js/modernizr';
 
 menu();
+animacoes();
 parallax('.home-parallax img');
 setColors('.services-item', ['yellow', 'green', 'blue', 'red']);

@@ -53,3 +53,28 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .google {  
+    padding: 128px 0;
+
+    .container {
+      display: grid;
+      gap: 64px;
+    }
+  }
+
+  .google-img img {
+    width: 280px;
+  }
+
+  .google-text {
+    width: 100%;
+    max-width: 400px;
+    justify-self: flex-end;
+
+    .title {
+      width: 280px;
+    }
+  }
+}
