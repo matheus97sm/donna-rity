@@ -13,8 +13,8 @@
 <?php 
 wp_reset_query();
 
-if (!is_front_page()) { 
-  include 'free-estimate.php';  
+if (!is_front_page() && get_the_ID() != 178) {
+  include 'free-estimate-component.php';  
 } ?>
 
 <footer class="footer">

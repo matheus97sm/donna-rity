@@ -1,18 +1,23 @@
+﻿<?php
+/**
+ * Template Name: free estimate
+ *
+ * @package WordPress
+ * @subpackage agenciaSalt
+ * @since agenciaSalt
+ */
+get_header(); ?>
+
 <section class="free-estimate">
   <div class="container">
-    <div class="free-estimate-text">
-      <h2 class="title white">Do you need our work?</h2>
+    <div class="form-wrapper">
+      <h2>
+        <span>Free estimate</span>
+      </h2>
 
-      <a 
-        href="<?=site_url()?>/contact" 
-        class="cta cta-yellow" 
-      >Free estimate</a>
+      <?php echo do_shortcode('[contact-form-7 id="22" title="Free Estimate"]'); ?>
     </div>
   </div>
-
-  <img 
-    src="<?=get_template_directory_URI()?>/img/src/logo-dark-green.svg" 
-    alt="Donna Rity Cleaning" 
-    class="free-estimate-logo" 
-  />
 </section>
+
+<?php get_footer();

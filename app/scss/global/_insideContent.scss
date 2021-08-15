@@ -1,0 +1,37 @@
+.inside-content {
+  padding: 64px 0;
+  background-color: #fff;
+
+  .container {
+    position: relative;
+    padding-left: 16px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 82px;
+      left: 0;
+      width: 2px;
+      height: 256px;
+      max-height: 80%;
+      background-color: $green;
+    }
+
+    h2 {
+      margin: 96px 0 32px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      line-height: 1.8rem;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

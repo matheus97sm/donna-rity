@@ -1,0 +1,50 @@
+.about {
+  padding: 64px 0;
+
+  &.about-mission {
+    background-color: $lightGrey;
+  }
+
+  .container {
+    display: grid;
+    gap: 32px;
+  }
+}
+
+.about-history-img,
+.about-mission-img {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.about-history-text,
+.about-mission-text {
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  div {
+    padding-left: 16px;
+  }
+}
+
+.about-history-text {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 96px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: $green;
+  }
+}
+
+.about-mission-text {
+  grid-row: 2;
+}

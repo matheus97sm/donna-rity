@@ -1,0 +1,52 @@
+.form-wrapper {
+  form {
+    padding-left: 32px;
+    display: grid;
+    gap: 16px;
+    border-left: 2px solid $green;
+
+    input:not([type="submit"]),
+    select,
+    textarea {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 8px 0;
+      border: none;
+      border-bottom: 1px solid $text;
+      font-size: 16px;
+      color: $grey;
+      
+      &::placeholder {
+        color: $text;
+      }
+    }
+
+    textarea {
+      height: 108px;
+    }
+
+    input[type="submit"] {
+      justify-self: flex-start;
+      display: inline-block;
+      padding: 16px 32px;
+      margin-top: 32px;
+      background-color: #fff;
+      box-shadow: 0 0 32px rgba(0, 0, 0, .15);
+      border-radius: 4px;
+      transition: .5s color ease, .5s background-color ease;
+      color: $green;
+      font-size: 14px;
+      font-weight: bolder;
+      letter-spacing: .05rem;
+      text-align: center;
+      text-transform: uppercase;
+      border: none;
+
+      &:hover {
+        background-color: $green;
+        color: #fff;
+      }
+    }
+  }
+}

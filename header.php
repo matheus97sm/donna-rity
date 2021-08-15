@@ -51,7 +51,7 @@
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'MenuTopo', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
         
           <a 
-            href="<?=site_url()?>/contact" 
+            href="<?=site_url()?>/free-estimate" 
             class="cta cta-yellow" 
           >free estimate</a>
         </nav>
@@ -62,3 +62,10 @@
       </div>
     </div>
   </header>
+
+  <?php 
+  wp_reset_query();
+
+  if (!is_front_page()) { 
+    include 'inside-banner.php';  
+  } ?>

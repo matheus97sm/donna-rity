@@ -1,7 +1,7 @@
 export default function parallax(classes) {
-  const parallaxImgs = document.querySelectorAll(classes)
+  const parallaxImgs = document.querySelectorAll(classes);
 
-  if (!parallaxImgs) return null;
+  if (!parallaxImgs[0]) return null;
 
   let actual = 0;
 

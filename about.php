@@ -8,27 +8,6 @@
  */
 get_header(); ?>
 
-<?php if( have_rows('banner') ):
-while( have_rows('banner') ): the_row(); 
-
-$title = get_sub_field('title');
-$text = get_sub_field('text');
-?>
-
-<section class="inside-banner">
-  <div class="container">
-    <div class="inside-banner">
-      <h1><?=$title?></h1>
-      <div>
-        <?=$text?>
-      </div>
-    </div>
-  </div>
-</section>
-
-<?php endwhile; ?>
-<?php endif; ?>
-
 <?php if( have_rows('history') ):
 while( have_rows('history') ): the_row(); 
 

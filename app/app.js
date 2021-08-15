@@ -153,7 +153,7 @@ eval("!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return parallax; });\nfunction parallax(classes) {\r\n  const parallaxImgs = document.querySelectorAll(classes)\r\n\r\n  if (!parallaxImgs) return null;\r\n\r\n  let actual = 0;\r\n\r\n  parallaxImgs[0].classList.add('active');\r\n\r\n  window.setInterval(() => {\r\n    parallaxImgs[actual].classList.remove('active');\r\n    \r\n    actual = actual === parallaxImgs.length - 1 ? 0 : actual + 1;\r\n    \r\n    parallaxImgs[actual].classList.add('active');\r\n  }, 5000)\r\n}\r\n\n\n//# sourceURL=webpack:///./app/js/parallax.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return parallax; });\nfunction parallax(classes) {\r\n  const parallaxImgs = document.querySelectorAll(classes);\r\n\r\n  if (!parallaxImgs[0]) return null;\r\n\r\n  let actual = 0;\r\n\r\n  parallaxImgs[0].classList.add('active');\r\n\r\n  window.setInterval(() => {\r\n    parallaxImgs[actual].classList.remove('active');\r\n    \r\n    actual = actual === parallaxImgs.length - 1 ? 0 : actual + 1;\r\n    \r\n    parallaxImgs[actual].classList.add('active');\r\n  }, 5000)\r\n}\r\n\n\n//# sourceURL=webpack:///./app/js/parallax.js?");
 
 /***/ }),
 

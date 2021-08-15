@@ -1,0 +1,13 @@
+.contact {
+  width: 100%;
+  padding: 64px 0;
+  background-color: #fff;
+
+  .container {
+    display: grid;
+    gap: 32px;
+  }
+}
+
+@import './dropMessage';
+@import './info';

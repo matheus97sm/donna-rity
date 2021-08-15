@@ -8,35 +8,18 @@
  */
 get_header(); ?>
 
-<?php if( have_rows('banner') ):
-while( have_rows('banner') ): the_row(); 
-
-$title = get_sub_field('title');
-$text = get_sub_field('text');
-?>
-
-<section class="inside-banner">
-  <div class="container">
-    <div class="inside-banner">
-      <h1><?=$title?></h1>
-      <div>
-        <?=$text?>
-      </div>
-    </div>
-  </div>
-</section>
-
-<?php endwhile; ?>
-<?php endif; ?>
-
 <section class="contact">
   <div class="container">
-    <div class="drop-message">
-      <h2>Drop a message</h2>
+    <div class="drop-message form-wrapper">
+      <h2>
+        <span>Drop a message</span>
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <use xlink:href="#mail"></use>
+        </svg>
+      </h2>
 
-      <?php echo do_shortcode('[contact-form-7 id="22" title="Free Estimate"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="177" title="Drop a Message"]'); ?>
     </div>
-
     
     <?php if( have_rows('contact_info') ):
     while( have_rows('contact_info') ): the_row(); 
@@ -53,27 +36,27 @@ $text = get_sub_field('text');
 
       <div class="contact-info-itens">
         <a href="mailto:<?=$mail?>" target="_blank">
-          <span><?=$mail?></span>
-          
           <svg width="32" height="32" viewBox="0 0 32 32">
             <use xlink:href="#mail"></use>
           </svg>
+
+          <span><?=$mail?></span>
         </a>
         
         <a href="tel:<?=$phone_number?>" target="_blank">
-          <span><?=$phone_number?></span>
-          
           <svg width="32" height="32" viewBox="0 0 32 32">
-            <use xlink:href="#tel"></use>
+            <use xlink:href="#phone"></use>
           </svg>
+
+          <span><?=$phone_number?></span>          
         </a>
         
         <a href="<?=$address_link?>" target="_blank">
-          <span><?=$address?></span>
-          
           <svg width="32" height="32" viewBox="0 0 32 32">
             <use xlink:href="#pin"></use>
           </svg>
+
+          <span><?=$address?></span>          
         </a>
       </div>
     </div>

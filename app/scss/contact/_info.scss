@@ -1,0 +1,27 @@
+.contact-info {
+  width: 100%;
+  padding: 64px 32px;
+  background-color: $lightGrey;
+}
+
+.contact-info-itens {
+  padding-left: 32px;
+  margin-top: 32px;
+  display: grid;
+  gap: 8px;
+
+  a {
+    padding: 8px 0;
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    gap: 16px;
+    align-items: center;
+    color: $text;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: $green;
+    }
+  }
+}

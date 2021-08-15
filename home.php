@@ -14,7 +14,7 @@ while( have_rows('banner') ): the_row();
 $title = get_sub_field('title');
 $text = get_sub_field('text');
 $button_name = get_sub_field('button_name');
-$button_link = get_sub_field('button_link');
+$button_link = get_sub_field('button_link')['url'];
 ?>
 
 <section class="banner">
@@ -85,9 +85,9 @@ while( have_rows('about_us') ): the_row();
 $title = get_sub_field('title');
 $text = get_sub_field('text');
 $button_name = get_sub_field('button_name');
-$button_link = get_sub_field('button_link');
+$button_link = get_sub_field('button_link')['url'];
 $alternate_button_name = get_sub_field('alternate_button_name');
-$alternate_button_link = get_sub_field('alternate_button_link');
+$alternate_button_link = get_sub_field('alternate_button_link')['url'];
 ?>
 
 <section class="home-about">
@@ -188,16 +188,16 @@ $text = get_sub_field('text');
     </div>
 
     <a 
-      href="<?=$alternate_button_link?>" 
+      href="<?=site_url()?>/services" 
       class="cta cta-white-yellow" 
-    ><?=$alternate_button_name?></a>
+    >see more</a>
   </div>
 </section>
 
 <?php endwhile; ?>
 <?php endif; ?>
 
-<?php include 'free-estimate.php'; ?>
+<?php include 'free-estimate-component.php'; ?>
 
 <section class="home-blog">
   <div class="container">

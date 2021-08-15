@@ -45,6 +45,12 @@ h1 {
   font-weight: bolder;
 }
 
+h2 {
+  color: $green;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
 .container {
   width: 90%;
   max-width: 1050px;
@@ -119,7 +125,11 @@ h1 {
 
 @import './scss/header/header';
 @import './scss/home';
+@import './scss/about';
 @import './scss/services';
-@import './scss/free-estimate';
+@import './scss/global';
+@import './scss/blog';
+@import './scss/contact';
+@import './scss/freeEstimate';
 @import './scss/footer/footer';
 @import './animation';

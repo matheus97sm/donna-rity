@@ -43,7 +43,9 @@
       }
     }
 
-    &.current-menu-item, &:hover {
+    &.current-menu-item,
+    &.current-page-ancestor,
+    &:hover {
       a::before {
         width: 24px;
       }

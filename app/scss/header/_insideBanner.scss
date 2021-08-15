@@ -1,0 +1,22 @@
+.inside-banner {
+  width: 100%;
+  padding: 128px 0 64px;
+  background-color: $lightGrey;
+
+  .container {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+
+    h1.title {
+      color: $grey;
+      font-size: 46px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
