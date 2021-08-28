@@ -3,8 +3,8 @@
  * Template Name: home
  *
  * @package WordPress
- * @subpackage agenciaSalt
- * @since agenciaSalt
+ * @subpackage donnaRity
+ * @since donnaRity
  */
 get_header(); ?>
 
@@ -20,21 +20,23 @@ $button_link = get_sub_field('button_link')['url'];
 <section class="banner">
   <div class="container">
     <div class="banner-text">
-      <h1><?=$title?></h1>
-      <p><?=$text?></p>
+      <h1 class="fadeRight" data-anima-tempo="500"><?=$title?></h1>
+      <p class="fadeRight" data-anima-tempo="750"><?=$text?></p>
 
-      <a href="<?=$button_link?>" class="cta cta-yellow"><?=$button_name?></a>
+      <a href="<?=$button_link?>" class="cta cta-yellow fadeRight" data-anima-tempo="1000"><?=$button_name?></a>
     </div>
 
     <img 
-      class="banner-img"
+      class="banner-img fadeUp"
+      data-anima-tempo="1000"
       src="<?=get_template_directory_URI()?>/img/src/banner.png" 
       alt="Donna Rity Cleaning"
     />
   </div>
  
   <img 
-    class="banner-logo" 
+    class="banner-logo opacity"
+    data-anima-tempo="1800"
     src="<?=get_template_directory_URI()?>/img/src/logo-green.svg" 
     alt="Donna Rity Cleaning" 
   />
@@ -54,7 +56,7 @@ $button_link = get_sub_field('button_link')['url'];
 
 <section class="google">
   <div class="container">
-    <div class="google-img">
+    <div class="google-img fadeUp" data-animar>
       <a href="<?=$button_link?>" target="_blank">
         <img 
           src="<?=get_template_directory_URI()?>/img/src/google-review.png"
@@ -64,13 +66,14 @@ $button_link = get_sub_field('button_link')['url'];
     </div>
 
     <div class="google-text">
-      <h2 class="title"><?=$title?></h2>
-      <p><?=$text?></p>
+      <h2 class="title fadeUp" data-animar><?=$title?></h2>
+      <p class="fadeUp" data-animar><?=$text?></p>
 
       <a 
         href="<?=$button_link?>" 
-        class="cta cta-yellow" 
+        class="cta cta-yellow fadeUp" 
         target="_blank"
+        data-animar
       ><?=$button_name?></a>
     </div>
   </div>
@@ -93,13 +96,13 @@ $alternate_button_link = get_sub_field('alternate_button_link')['url'];
 <section class="home-about">
   <div class="container">
     <div class="home-about-container">
-      <h2 class="title"><?=$title?></h2>
+      <h2 class="title fadeUp" data-animar><?=$title?></h2>
 
-      <div class="home-about-text">
+      <div class="home-about-text fadeUp" data-animar>
         <?=$text?>
       </div>
 
-      <div class="home-about-buttons">
+      <div class="home-about-buttons fadeUp" data-animar>
         <a 
           href="<?=$button_link?>" 
           class="cta cta-green" 
@@ -160,11 +163,11 @@ $text = get_sub_field('text');
 <section class="services home-services">
   <div class="container">
     <div class="home-services-text">
-      <h2 class="title"><?=$title?></h2>
-      <p><?=$text?></p>
+      <h2 class="title fadeUp" data-animar><?=$title?></h2>
+      <p class="fadeUp" data-animar><?=$text?></p>
     </div>
 
-    <div class="services-items-wrapper">
+    <div class="services-items-wrapper fadeUp" data-animar>
       <?php
         $args = array(
           'post_parent' => 12,
@@ -181,7 +184,6 @@ $text = get_sub_field('text');
         
         <div>
           <h3><?=the_title()?></h3>
-          <p><?=custom_excerpt2(160)?></p>
         </div>
       </a>
       <?php endwhile; ?>
@@ -189,7 +191,8 @@ $text = get_sub_field('text');
 
     <a 
       href="<?=site_url()?>/services" 
-      class="cta cta-white-yellow" 
+      class="cta cta-white-yellow fadeUp"
+      data-animar 
     >see more</a>
   </div>
 </section>

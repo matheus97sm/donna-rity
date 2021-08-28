@@ -3,8 +3,8 @@
  * Template Name: services
  *
  * @package WordPress
- * @subpackage agenciaSalt
- * @since agenciaSalt
+ * @subpackage donnaRity
+ * @since donnaRity
  */
 get_header(); ?>
 
@@ -27,7 +27,6 @@ get_header(); ?>
         
         <div>
           <h3><?=the_title()?></h3>
-          <p><?=custom_excerpt2(160)?></p>
         </div>
       </a>
       <?php endwhile; ?>

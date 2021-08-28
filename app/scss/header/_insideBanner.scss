@@ -18,6 +18,7 @@
       text-align: center;
       font-size: 18px;
       line-height: 27px;
+      justify-self: center;
     }
   }
 }
@@ -26,9 +27,15 @@
   .inside-banner {
     padding: 156px 0 96px;
   
-    .container h1.title {
-      color: $grey;
-      font-size: 64px;
+    .container {
+      h1.title {
+        color: $grey;
+        font-size: 64px;
+      }
+
+      p {
+        max-width: 720px;
+      }
     }
   }
 }

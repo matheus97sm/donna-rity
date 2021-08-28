@@ -15,9 +15,9 @@ export default function animacoes() {
 
   const animarComTempo = document.querySelectorAll("[data-anima-tempo]");
 
-  window.setTimeout(() => {
-    animarComTempo.forEach(item => {
+  animarComTempo.forEach(item => {
+    window.setTimeout(() => {
       item.classList.add("anime");
-    });
-  }, 500);
+    }, item.dataset.animaTempo);
+  });
 }

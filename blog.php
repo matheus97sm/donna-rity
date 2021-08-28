@@ -3,8 +3,8 @@
  * Template Name: blog
  *
  * @package WordPress
- * @subpackage agenciaSalt
- * @since agenciaSalt
+ * @subpackage donnaRity
+ * @since donnaRity
  */
 get_header(); ?>
 

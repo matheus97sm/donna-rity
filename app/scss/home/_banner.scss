@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100%;
-  padding-top: 120px;
+  padding-top: 80px;
   background-color: $lightGrey;
   z-index: 1;
 
@@ -17,7 +17,7 @@
       width: 100%;
   
       h1 {
-        max-width: 220px;
+        font-size: 36px;
       }
   
       p {
@@ -51,7 +51,8 @@
         width: 100%;
     
         h1 {
-          max-width: 300px;
+          max-width: unset;
+          font-size: 48px;
         }
     
         p {
@@ -82,6 +83,15 @@
       .banner-img {
         width: 100%;
         align-self: flex-end;
+      }
+
+      .banner-text {
+        width: 100%;
+    
+        h1 {
+          font-size: 52px;
+          max-width: unset;
+        }
       }
     }
 

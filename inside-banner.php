@@ -8,7 +8,7 @@ $text = get_sub_field('text');
 <section class="inside-banner">
   <div class="container">
     <h1 class="title"><?=$title?></h1>
-    <p><?=$text?></p>
+    <?=$text?>
   </div>
 </section>
 

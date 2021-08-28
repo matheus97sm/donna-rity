@@ -3,8 +3,8 @@
  * Template Name: contact
  *
  * @package WordPress
- * @subpackage agenciaSalt
- * @since agenciaSalt
+ * @subpackage donnaRity
+ * @since donnaRity
  */
 get_header(); ?>
 
@@ -12,13 +12,13 @@ get_header(); ?>
   <div class="container">
     <div class="drop-message form-wrapper">
       <h2>
-        <span>Drop a message</span>
+        <span>Free Estimate</span>
         <svg width="32" height="32" viewBox="0 0 32 32">
           <use xlink:href="#mail"></use>
         </svg>
       </h2>
 
-      <?php echo do_shortcode('[contact-form-7 id="177" title="Drop a Message"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="22" title="Free Estimate"]'); ?>
     </div>
     
     <?php if( have_rows('contact_info') ):

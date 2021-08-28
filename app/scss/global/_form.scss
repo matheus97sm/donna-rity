@@ -5,6 +5,12 @@
     gap: 16px;
     border-left: 2px solid $green;
 
+    li, strong {
+      font-size: 14px;
+      line-height: 21px;
+      color: $text;
+    }
+
     input:not([type="submit"]),
     select,
     textarea {
