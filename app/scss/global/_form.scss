@@ -54,5 +54,69 @@
         color: #fff;
       }
     }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: $green;
+    }
+
+    .cleaningType {
+      input[type="checkbox"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        display: none;
+      }
+
+      .wpcf7-list-item {
+        margin: 0;
+      }
+  
+      .wpcf7-list-item-label {
+        position: relative;
+        display: block;
+        width: 48px;
+        height: 26px;
+        background-color: #ddd;
+        border-radius: 32px;
+        cursor: pointer;
+  
+        transition: 0.15s background-color linear;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 4px;
+          top: 50%;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          transform: translate3d(0, -50%, 0);
+          background-color: #fff;
+
+          transition: 0.15s left linear;
+        }
+
+        &.active {
+          background-color: $green;
+
+          &::before {
+            left: calc(100% - 24px);
+          }
+        }
+      }
+    }
+
+    .form-content-wrapper {
+      display: none;
+      gap: 16px;
+      margin-bottom: 32px;
+
+      &.active {
+        display: grid;
+      }
+    }
   }
 }
