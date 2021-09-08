@@ -82,15 +82,81 @@
       <b>Phone Number:</b> [tel]
       <b>Location:</b> [location]
       <b>Is this for:</b> [isthisfor]
+      <br>
+      <br>
+      <b>House Cleaning: </b> [housecleaning]
+      <br>
       <b>Type of Residence:</b> [residencetype]
       <b>Approximate square feet?:</b> [squarefeet]
       <b>Number of Bedrooms:</b> [bedrooms]
       <b>Number of Bathrooms:</b> [bathrooms]
       <b>Cleaning type:</b> [cleaningtype]
+      <br>
+      <br>
+      <b>Carpet Cleaning:</b> [carpetcleaning]
+      <br>
+      <b>Protect?:</b> [carpetprotect]
+      <b>Deodorize?:</b> [carpetdeodorize]
+      <b>Number of Rooms:</b> [carpetroom]
+      <b>Number of Hallways:</b> [carpethallways]
+      <b>How many steps?:</b> [carpetstairs]
+      <br>
+      <br>
+      <b>Upholstery Cleaning:</b> [upholsterycleaning]
+      <br>
+      <b>Protect?:</b> [upholsteryprotect]
+      <b>Deodorize?:</b> [upholsterydeodorize]
+      <b>Number of Sofa Seats:</b> [upholsterysofaseats]
+      <b>Number of Sectional Seats:</b> [upholsterysectionalseats]
+      <b>Number of Love Seats:</b> [upholsteryloveseats]
+      <b>Number of Chairs:</b> [upholsterychair]
+      <b>Number of Ottoman:</b> [upholsteryottoman]
+      <b>Number of Dinining Room chair:</b> [upholsterydiningchair]
+      <br>
+      <br>
+      <b>Car Cleaning:</b> [carcleaning]
+      <br>
+      <b>Floor?:</b> [carfloor]
+      <b>Seats?:</b> [carseats]
+      <b>Car type:</b> [cartype]
+      <br>
+      <br>
+      <b>Area Rug:</b> [arearug]
+      <br>
+      <b>Protect?:</b> [rugprotect]
+      <b>Deodorize?:</b> [rugdeodorize]
+      <b>Length/ Width _ x _:</b> [ruglengthwidth]
+      <br>
+      <br>
       <b>Cleaning frequency:</b> [cleaningfrequency]
       <br>
       <b>Message / Instructions:</b><br>
       [instructions]
     </div>
   </div>
+</div>
+
+OLD
+
+<div style="width:800px; padding:40px 0; background-color:#eee;">
+	<div style="width:560px; padding:20px; border-radius:10px; background-color:#FFF; text-align:center; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; margin:0 0 0 100px">
+    	<h2>Contact from website</h2>
+		
+        <div style="border-top:1px solid #eee; border-bottom:1px solid #eee; padding:20px 0; margin:10px 0; text-align:left">    
+            <b>Name:</b> [username]
+            <b>E-mail:</b> [email]
+            <b>Phone Number:</b> [tel]
+            <b>Location:</b> [location]
+            <b>Is this for:</b> [isthisfor]
+            <b>Type of Residence:</b> [residencetype]
+            <b>Approximate square feet?:</b> [squarefeet]
+            <b>Number of Bedrooms:</b> [bedrooms]
+            <b>Number of Bathrooms:</b> [bathrooms]
+            <b>Cleaning type:</b> [cleaningtype]
+            <b>Cleaning frequency:</b> [cleaningfrequency]
+            <br>
+            <b>Message / Instructions:</b><br>
+            [instructions]
+        </div>
+    </div>
 </div>

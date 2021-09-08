@@ -18,8 +18,6 @@ export default function form() {
       checkbox.classList.toggle('active');
 
       formContents[index].classList.toggle('active');
-
-      validateField(formContents[index], !formCheckboxs[index].checked);
     });
   });
 
@@ -39,13 +37,5 @@ export default function form() {
 
       toastify(errorTitle, errorMessage, 'error', 5000);
     }
-  });
-}
-
-function validateField(parentField, required) {
-  const childrenFields = Array.from(parentField.children);
-
-  childrenFields.forEach(span => {
-    span.children[0].required = required;
   });
 }
