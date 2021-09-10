@@ -29,6 +29,8 @@ get_header(); ?>
     $phone_number = get_sub_field('phone_number');
     $address = get_sub_field('address');
     $address_link = get_sub_field('address_link');
+    $instagram = get_sub_field('instagram');
+    $facebook = get_sub_field('facebook');
     ?>
 
     <div class="contact-info">
@@ -58,6 +60,20 @@ get_header(); ?>
 
           <span><?=$address?></span>          
         </a>
+
+        <div class="social-media">
+          <a href="<?=$instagram?>" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#instagram"></use>
+            </svg>       
+          </a>
+          
+          <a href="<?=$facebook?>" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#facebook"></use>
+            </svg>       
+          </a>
+        </div>
       </div>
     </div>
 
